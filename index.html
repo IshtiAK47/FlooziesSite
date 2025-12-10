@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floozies Fashion | Premium Modest Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f1012', 
+                            gray: '#1f1f1f',
+                            accent: '#ffffff', 
+                            gold: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0f1012; }
+        ::-webkit-scrollbar-thumb { background: #444; border-radius: 4px; }
+        .whatsapp-green { background-color: #25D366; }
+        .whatsapp-green:hover { background-color: #128C7E; }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-200 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-12 w-12 object-cover rounded shadow-lg border border-gray-700" src="https://raw.githubusercontent.com/IshtiAK47/FlooziesSite/refs/heads/main/src/logo.jpg" alt="Floozies Fashion Logo">
+                    <span class="font-bold text-xl tracking-widest text-white uppercase">Floozies</span>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#collection" class="hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Collection</a>
+                        <a href="#about" class="hover:text-white transition px-3 py-2 rounded-md text-sm font-medium">Story</a>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://wa.me/8801829390013" class="flex items-center gap-2 border border-gray-600 px-4 py-2 rounded-full hover:bg-white hover:text-black transition text-sm font-semibold">
+                        <i class="ph ph-whatsapp-logo text-lg"></i>
+                        <span class="hidden sm:inline">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <img src="https://raw.githubusercontent.com/IshtiAK47/FlooziesSite/refs/heads/main/src/bg.png" class="absolute inset-0 w-full h-full object-cover" alt="Modest Fashion BD">
+        
+        <div class="relative z-20 text-center px-4 max-w-3xl mx-auto">
+            <span class="text-brand-gold tracking-[0.2em] uppercase text-sm font-bold mb-4 block">Premium Modest Wear</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-6 leading-tight">
+                Redefining Modesty in Bangladesh
+            </h1>
+            <p class="mt-4 text-lg text-gray-200 mb-8 font-light">
+                Exquisite Burkas, Khimars, and Prayer Sets crafted for the modern Bangladeshi woman.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#collection" class="bg-white text-black font-semibold px-8 py-4 rounded-sm hover:bg-gray-200 transition tracking-widest uppercase text-sm">
+                    View Collection
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="py-20 bg-brand-dark">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8 tracking-wide uppercase">The Floozies Standard</h2>
+            <div class="bg-brand-gray p-8 md:p-12 rounded-lg border border-gray-800 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-brand-gold"></div>
+                <p class="text-lg leading-relaxed text-gray-300">
+                    "This isn't just clothing; it's an identity." <br><br>
+                    Based in the heart of Bangladesh, <span class="text-white font-semibold">Floozies Fashion</span> brings you the perfect balance of international trends and traditional modesty. We understand the need for breathable, high-quality fabrics suited for our weather, without compromising on that premium, luxurious look.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="py-20 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-800 pb-6">
+                <div>
+                    <h2 class="text-3xl font-bold text-white tracking-wide uppercase">New Arrivals</h2>
+                    <p class="text-gray-500 mt-2">Cash on Delivery Available Nationwide</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <span class="text-brand-gold text-sm italic">Free shipping on orders over ৳5,000</span>
+                </div>
+            </div>
+
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <span class="text-2xl font-bold text-white tracking-widest">FLOOZIES</span>
+                <p class="text-gray-500 mt-4 text-sm">
+                    Elevating modest fashion in Bangladesh. <br>
+                    Quality you can trust, modesty you can love.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4">Customer Care</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-brand-gold">Shipping Policy</a></li>
+                    <li><a href="#" class="hover:text-brand-gold">Size Guide</a></li>
+                    <li><a href="#" class="hover:text-brand-gold">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase tracking-wider mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/flooziesfashion" target="_blank" class="bg-gray-800 p-2 rounded hover:bg-white hover:text-blue-600 transition">
+                        <i class="ph ph-facebook-logo text-xl"></i>
+                    </a>
+                    <a href="https://m.youtube.com/@flooziefashion" target="_blank" class="bg-gray-800 p-2 rounded hover:bg-white hover:text-red-600 transition">
+                        <i class="ph ph-youtube-logo text-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@floozies.fashoin?fbclid=IwY2xjawOl5AhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8yNzUyNTQ2OTI1OTgyNzkAAR4uA92gYffEAL_V5a89nLOO7g9l3EriXYjlkwzJ-EtA8XTvdx29fd0kaULU7w_aem_AaZVJy4iDGJcI7L0Fk6YJw" target="_blank" class="bg-gray-800 p-2 rounded hover:bg-white hover:text-black transition">
+                        <i class="ph ph-tiktok-logo text-xl"></i>
+                    </a>
+                    <a href="https://wa.me/8801829390013" target="_blank" class="bg-gray-800 p-2 rounded hover:bg-white hover:text-green-600 transition">
+                        <i class="ph ph-whatsapp-logo text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-600 text-xs border-t border-gray-800 pt-8">
+            &copy; 2024 Floozies Fashion BD. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // CONFIGURATION: Updated Phone Number
+        const WHATSAPP_NUMBER = "8801829390013"; 
+
+        // Product Data (Prices in BDT)
+        const products = [
+            {
+                id: 1,
+                name: "Royal Black Khimar Set",
+                price: "2250",
+                image: "https://raw.githubusercontent.com/IshtiAK47/FlooziesSite/refs/heads/main/items/item%20(1).jpg", 
+                tag: "Best Seller",
+                desc: "Full coverage luxury Khimar. Breathable, opaque, and elegant."
+            },
+            {
+                id: 2,
+                name: "Floral Azure Prayer Set",
+                price: "2350",
+                image: "https://raw.githubusercontent.com/IshtiAK47/FlooziesSite/refs/heads/main/items/item%20(3).jpg", 
+                tag: "New Arrival",
+                desc: "Soft cotton-blend Namaz Mukhna. Cool and comfortable for prayer."
+            },
+            {
+                id: 3,
+                name: "Midnight Abstract Set",
+                price: "2450",
+                image: "https://raw.githubusercontent.com/IshtiAK47/FlooziesSite/refs/heads/main/items/item%20(2).jpg", 
+                tag: null,
+                desc: "Elegant patterned prayer wear. Lightweight fabric for daily use."
+            }
+        ];
+
+        // Render Products
+        const productGrid = document.getElementById('product-grid');
+        
+        products.forEach(product => {
+            const card = document.createElement('div');
+            // Added flex-col to handle variable height content better
+            card.className = 'group relative bg-brand-gray rounded-sm overflow-hidden border border-gray-800 hover:border-gray-600 transition duration-300 flex flex-col';
+            
+            const message = `Hi, I want to order the *${product.name}* - Price: ৳${product.price}`;
+            const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+            card.innerHTML = `
+                <div class="aspect-h-4 aspect-w-3 bg-gray-200 overflow-hidden relative">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-96 object-cover object-center group-hover:scale-105 transition duration-500">
+                    ${product.tag ? `<span class="absolute top-2 left-2 bg-brand-gold text-black text-xs font-bold px-2 py-1 uppercase tracking-wider">${product.tag}</span>` : ''}
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-lg font-medium text-white">${product.name}</h3>
+                        <p class="text-lg font-bold text-white whitespace-nowrap">৳${product.price}</p>
+                    </div>
+                    <p class="text-xs text-gray-400 mb-6 flex-grow leading-relaxed">${product.desc}</p>
+                    
+                    <a href="${whatsappLink}" target="_blank" class="mt-auto flex items-center justify-center gap-2 w-full whatsapp-green text-white py-3 px-4 hover:opacity-90 transition uppercase text-sm font-bold tracking-widest rounded-sm">
+                        <i class="ph ph-whatsapp-logo text-xl"></i>
+                        Order on WhatsApp
+                    </a>
+                </div>
+            `;
+            productGrid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
